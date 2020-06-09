@@ -30,6 +30,7 @@ body{
   background-color: white;
   margin: 10em auto;
   position: relative;
+  overflow: hidden;
 }
 
 nav{
@@ -38,6 +39,7 @@ nav{
   position: absolute;
   top: 2em;
   right: 3em;
+  z-index: 2;
 }
 
 nav a{
@@ -57,6 +59,8 @@ h1{
   font-size: 16px;
   letter-spacing: 10px;
   color: rgb(29, 29, 29);
+  z-index: 2;
+
 }
 
 p{
@@ -65,35 +69,77 @@ p{
   font-weight: 900;
   width: 17em;
   margin-top: 7em;
-  margin-left: 7em;
+  margin-left: 9em;
   margin-right: 3em;
   line-height: 1.3em;
+  z-index: 2;
+}
+
+.black-box{
+  height: 900px;
+  width: 1000px;
+  background-color: black;
+  position: absolute;
+  top: 4.8em;
+  left: 13.75em;
+
+  /* animation-name: black-box;
+  animation-duration: 3s; */
+  animation: right 3s both 1 linear;
+  z-index: 3;
+}
+
+.grey-box{
+  height: 700px;
+  width: 1200px;
+  background-color: rgb(179, 165, 165);
+  position: absolute;
+  z-index: 1;
+
+  /* animation-name: black-box;
+  animation-duration: 3s; */
+  animation: down 4s both 1 linear;
+}
+
+.black-box-2{
+  height: 900px;
+  width: 1400px;
+  background-color: black;
+  position: absolute;
+  z-index: 4;
+
+  /* animation-name: black-box;
+  animation-duration: 3s; */
+  animation: up 6s both 1 ease-in-out;
 }
 
 
+@keyframes right {
+  from {transform: translateX(-900px)}
+  to{transform: translateX(0px)}
+} 
 
-
-
-/* .slides {
-  width: 800px;
-  height: 600px;
-
-  background-image: url(slides.gif);
-  background-repeat: no-repeat;
-  mix-blend-mode: multiply;
-
-  animation-name: slideshow;
-  animation-duration: 1000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: steps(4, end); 
+@keyframes down {
+  from {transform: translateY(-200em)}
+  to{transform: translateY(-5em)}
 }
 
-@keyframes slideshow {
-  from {
-    background-position-x: 0;
-  }
+@keyframes up {
+  from {transform: translateY(1000em)}
+  to{transform: translateY(0em)}
+}
 
-  to {
-    background-position-x: -800px;
-  }
-} */
+
+.text{
+  color: white;
+  z-index: 5;
+  animation: right 9s both 1 ease-in-out;
+}
+
+@keyframes wave{
+  0%{top: 68%}
+  50%{top: 40%}
+  100%{top: 68%}
+} 
+
+ 

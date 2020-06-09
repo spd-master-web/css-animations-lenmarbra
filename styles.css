@@ -1,0 +1,99 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+body{
+  background-color: #d3d3d3;
+  font-family: sans-serif;
+}
+
+.bg-img{
+  background-image: url(/assets/03.png);
+  background-position: center;
+  background-size: cover;
+  height: 590px;
+  width: 450px;
+  position: absolute;
+  top: 20em;
+  left: -10em;
+  bottom: -8em;
+  z-index: -1;
+}
+
+.box{
+  height: 500px;
+  width: 1000px;
+  background-color: white;
+  margin: 10em auto;
+  position: relative;
+}
+
+nav{
+  list-style: none;
+  display: inline-block;
+  position: absolute;
+  top: 2em;
+  right: 3em;
+}
+
+nav a{
+  display: inline;
+  margin: 1em;
+  padding: 2em 0;
+  text-decoration: none;
+  color: var(--main-color);  
+  font-size: 14px;
+}
+
+h1{
+  position: absolute;
+  margin: 2em 4em;
+  text-transform: uppercase;
+  font-family: 'ITC Avant Garde','Noto Sans TC','Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  font-size: 16px;
+  letter-spacing: 10px;
+  color: rgb(29, 29, 29);
+}
+
+p{
+  position: absolute;
+  font-size: 28px;
+  font-weight: 900;
+  width: 17em;
+  margin-top: 7em;
+  margin-left: 7em;
+  margin-right: 3em;
+  line-height: 1.3em;
+}
+
+
+
+
+
+/* .slides {
+  width: 800px;
+  height: 600px;
+
+  background-image: url(slides.gif);
+  background-repeat: no-repeat;
+  mix-blend-mode: multiply;
+
+  animation-name: slideshow;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(4, end); 
+}
+
+@keyframes slideshow {
+  from {
+    background-position-x: 0;
+  }
+
+  to {
+    background-position-x: -800px;
+  }
+} */

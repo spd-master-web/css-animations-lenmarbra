@@ -10,7 +10,7 @@ body{
   background-color: #ecf0f1;
   animation: bgcolor both 1 15s;
   animation-fill-mode: forwards;
-  height: 100em;
+  min-height: 100em;
 }
 
 @keyframes bgcolor{

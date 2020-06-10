@@ -7,7 +7,7 @@
 
 body{
   font-family: sans-serif;
-  background-color: #d3d3d3;
+  background-color: #ecf0f1;
   animation: bgcolor both 1 15s;
   animation-fill-mode: forwards;
   height: 100em;
@@ -15,6 +15,10 @@ body{
 
 @keyframes bgcolor{
   0%
+  {
+    background: #ecf0f1;
+  }
+  10%
   {
     background: #ecf0f1;
   }
@@ -40,7 +44,6 @@ body{
   }
 }
 
-
 .bg-img{
   background-image: url(/assets/03.png);
   background-position: center;
@@ -57,7 +60,7 @@ body{
 .box{
   height: 500px;
   width: 1000px;
-  background-color: #d3d3d3;
+  background-color: #feffff;
   margin: 10em auto;
   position: relative;
   overflow: hidden;
@@ -139,7 +142,6 @@ p{
   to{transform: translateY(0em)}
 }
 
-
 .text{
   color: white;
   z-index: 5;
@@ -151,11 +153,6 @@ p{
   from {transform: translateX(-1500px)}
   to{transform: translateX(0px)}
 } 
-
-
-/* .wavy{
-  -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0,0,0,0.2));
-} */
 
 .wavy span{
   position: relative;
@@ -231,9 +228,10 @@ h2{
   top: 1300px;
   left: 630px;
   font-family: 'ITC Avant Garde','Noto Sans TC','Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-  font-size: 30px;
-  letter-spacing: 10px;
+  font-size: 24px;
+  letter-spacing: 11px;
   color: white;
+  text-transform: uppercase;
   z-index: 2;
 }
 

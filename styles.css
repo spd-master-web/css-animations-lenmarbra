@@ -182,22 +182,24 @@ p{
   100%{opacity: 0}
 }
 
-/* .remove{
-  animation: opacity 11s ease-in-out 1;
-  animation-delay: 10s;
+.lady{
+  height: 466px;
+  width: 250px;
+  z-index: 5;
+  position: absolute;
+  top: 23%;
+  left: 40%;
+
+  background-image: url(/assets/lady.jpg);
+  background-repeat: no-repeat;
+  animation: movietime 20s both 1;
+  animation-delay: 15s;
 }
 
-@keyframes opacity{
-  0%
-  {
-    opacity: 1;
-  }
-  60%
-  {
-    opacity: 0.5;
-  }
-  100%
-  {
-    opacity: 0;
-  }
-} */
+@keyframes movietime 
+{
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
+
+

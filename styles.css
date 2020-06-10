@@ -57,7 +57,7 @@ body{
 .box{
   height: 500px;
   width: 1000px;
-  background-color: white;
+  background-color: #d3d3d3;
   margin: 10em auto;
   position: relative;
   overflow: hidden;
@@ -104,17 +104,7 @@ p{
   z-index: 2;
 }
 
-/* .black-box{
-  height: 900px;
-  width: 1000px;
-  background-color: black;
-  position: absolute;
-  top: 4.8em;
-  left: 13.75em;
-  animation: right 4s both 1 linear;
-  z-index: 3;
-} */
-
+/* -------BOX ANIMATIONS------ */
 .grey-box{
   height: 700px;
   width: 1200px;
@@ -183,6 +173,7 @@ p{
   100%{opacity: 0}
 }
 
+/* -------MOVIE------ */
 .lady{
   height: 416px;
   width: 110px;
@@ -211,11 +202,9 @@ from{background-position-x: 0;}
 to{background-position-x: -1170px;}
 }
 
-.scroll-down{
-
-}
 
 
+/* -------SCROLLING DOWN TEXT------ */
 .scroll-down{
   position: absolute;
   top: 45%;
@@ -236,7 +225,7 @@ to{background-position-x: -1170px;}
 }
 
 
-/* scrolling down */
+/* -------SCROLLING DOWN------ */
 h2{
   position: absolute;
   top: 1300px;

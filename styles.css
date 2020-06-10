@@ -211,8 +211,32 @@ from{background-position-x: 0;}
 to{background-position-x: -1170px;}
 }
 
-/* scrolling down */
+.scroll-down{
 
+}
+
+
+.scroll-down{
+  position: absolute;
+  top: 45%;
+  left: 43%;
+  font-family: 'ITC Avant Garde','Noto Sans TC','Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  font-size: 16px;
+  letter-spacing: 5px;
+  color: white;
+  z-index: 6;
+  opacity: 0;
+  animation: 4s slidedown 20s 1;
+}
+
+@keyframes slidedown{
+  0%{opacity: 0;}
+  50%{opacity: 0.5;}
+  100%{opacity: 1;}
+}
+
+
+/* scrolling down */
 h2{
   position: absolute;
   top: 1300px;
@@ -222,6 +246,5 @@ h2{
   letter-spacing: 10px;
   color: white;
   z-index: 2;
-
 }
 

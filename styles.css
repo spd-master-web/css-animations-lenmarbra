@@ -103,7 +103,7 @@ p{
   z-index: 2;
 }
 
-.black-box{
+/* .black-box{
   height: 900px;
   width: 1000px;
   background-color: black;
@@ -112,7 +112,7 @@ p{
   left: 13.75em;
   animation: right 4s both 1 linear;
   z-index: 3;
-}
+} */
 
 .grey-box{
   height: 700px;
@@ -183,23 +183,31 @@ p{
 }
 
 .lady{
-  height: 466px;
-  width: 250px;
+  height: 416px;
+  width: 110px;
   z-index: 5;
   position: absolute;
-  top: 23%;
-  left: 40%;
+  top: 33%;
+  left: 45%;
 
-  background-image: url(/assets/lady.jpg);
+  background-image: url(/assets/lady2.jpg);
   background-repeat: no-repeat;
-  animation: movietime 20s both 1;
-  animation-delay: 15s;
+  animation: movietime 5s both 1 15s, 
+            jumpinglady 1.2s infinite linear;
+  animation-timing-function: steps(8, end);
 }
 
 @keyframes movietime 
 {
   0%{opacity: 0}
-  100%{opacity: 1}
+  50%{opacity: 1}
+  100%{opacity: 0}
+}
+
+@keyframes jumpinglady
+{
+from{background-position-x: 0;}
+to{background-position-x: -1170px;}
 }
 
 

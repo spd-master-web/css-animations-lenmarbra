@@ -85,7 +85,7 @@ p{
 
   /* animation-name: black-box;
   animation-duration: 3s; */
-  animation: right 3s both 1 linear;
+  animation: right 4s both 1 linear;
   z-index: 3;
 }
 
@@ -98,7 +98,7 @@ p{
 
   /* animation-name: black-box;
   animation-duration: 3s; */
-  animation: down 4s both 1 linear;
+  animation: down 5s both 1 linear;
 }
 
 .black-box-2{
@@ -110,7 +110,7 @@ p{
 
   /* animation-name: black-box;
   animation-duration: 3s; */
-  animation: up 6s both 1 ease-in-out;
+  animation: up 7s both 1 ease-in-out;
 }
 
 
@@ -133,13 +133,24 @@ p{
 .text{
   color: white;
   z-index: 5;
-  animation: right 9s both 1 ease-in-out;
+  animation: right 8s both 1 ease-in-out;
 }
 
-@keyframes wave{
-  0%{top: 68%}
-  50%{top: 40%}
-  100%{top: 68%}
-} 
+.wavy{
+  -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0,0,0,0.2));
+}
 
- 
+.wavy span{
+  position: relative;
+  display: inline-block;
+  animation: wave 7s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes wave
+{
+  0%{transform: translateY(0px)}
+  20%{transform: translateY(-30px)}
+  40%, 100%{transform: translateY(0px)}
+}
+

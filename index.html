@@ -43,7 +43,14 @@
       <div class="lady"></div>
     </article>
 
-
+    <h2>The End</h2>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+    $(document).on('scroll', function(){
+      $('h2').css("left", Math.max(1300-0.75*window.scrollY, 100) + "px");
+    }) 
+    </script>
+  
   </section>
 
 </body>

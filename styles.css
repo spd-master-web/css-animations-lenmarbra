@@ -179,7 +179,7 @@ p{
   top: 33%;
   left: 45%;
 
-  background-image: url(/assets/lady2.jpg);
+  background-image: url(assets/lady2.jpg);
   background-repeat: no-repeat;
   animation: movietime 5s both 1 15s, 
             jumpinglady 1.2s infinite linear;

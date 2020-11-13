@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="gsap.css">
+  <title>Art by Self - Online Magazine</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/CSSRulePlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+
+
+</head>
+
+<header id="top-of-page">
+  <nav>
+    <a href="#">Search</a> 
+    <a href="#">Articles</a> 
+    <a href="#">Saved</a> 
+    <a href="#">About</a> 
+  </nav>
+</header>
+
+
+<body>
+
+<!-- Top Area -->
+<h1 class="title splittext">Self & Art</h1>
+<div class="line"></div>
+<div class="circle"></div>
+<!-- <div class="thumb"></div> -->
+<div class="green-area"></div>
+
+
+<!-- Table of Content -->
+
+<!-- <h4 id="title-article-area">Articles</h4> -->
+
+<section id="article-section">
+
+  <a href="#">
+      <img  srcset="/assets/KarenPence.png" alt="Article" media="/maxwidth: 300px /maxheight: 300px">
+  </a>
+  <a href="#">
+      <img  srcset="/assets/TheManyFaces.png" alt="Article" media="/maxwidth: 300px /maxheight: 300px"> 
+  </a>
+  <a href="#">
+      <img srcset="/assets/SelfDiscovery.png" alt="Article" media="/maxwidth: 300px /maxheight: 300px"> 
+  </a>
+  <a href="#">
+      <img srcset="/assets/WhileAtHome.png" alt="Article" media="/maxwidth: 300px /maxheight: 300px"> 
+  </a>
+  <a href="#">
+      <img srcset="/assets/Biennals.png" alt="Article" media="/maxwidth: 300px /maxheight: 300px"> 
+  </a>
+  <a href="#">
+      <img srcset="/assets/EmptyWorld.png" alt="Article" media="/maxwidth: 300px /maxheight: 300px"> 
+  </a>
+  <a href="#">
+      <img srcset="/assets/ArtistsSelfCare.png" alt="Article" media="/maxwidth: 300px /maxheight: 300px"> 
+  </a>
+  <a href="#">
+      <img srcset="/assets/StreetArtists.png" alt="Article" media="/maxwidth: 300px /maxheight: 300px"> 
+  </a>
+  <a href="#">
+      <img srcset="/assets/KidsShapes.png" alt="Article" media="/maxwidth: 300px /maxheight: 300px"> 
+  </a>
+</section>
+
+<a href="#top-of-page"><h4 class="top">Back to Top</h4></a>
+
+
+</body>
+<script>
+  // gsap.timeline()
+  gsap.from(".line", {y: -15, rotation: -15, delay: 1, x: 100, duration: 1.5, ease: "back"});
+  gsap.from(".title", {y: -15, rotation: -15, delay: 1, x: 100, duration: 1.5, ease: "back easeOut"});
+  gsap.fromTo(".circle", {y: 0, x: 0, delay: 1})
+
+  // ------------Time line try 1------------
+
+  // const tl = new TimeLineLite({paused: true});
+
+  // tl.from(".line", {y: -15, rotation: -15, delay: 1, x: 100, duration: 1.5, ease: "back"});
+  // tl.from(".title", {y: -15, rotation: -15, delay: 1, x: 100, duration: 1.5, ease: "back easeOut"});
+
+
+  // ------------Time line try 2------------
+  // var tl = new TimelineLite,
+  // mySplitText = new mySplitText(".splittext", {type: "words, lines, chars"})
+  //     lines = mySplitText.lines
+
+  //tl staggerFrom(lines, 1, {opacity:0, y:80, ease:Bounce.easeOut}, 0.4)
+
+  // document.getElementById("animate").onclick = function(){
+  //   tl.restart();
+  // }
+
+</script>
+
+
+<footer>
+  <div class="black-area"></div>
+</footer>
+
+</html>

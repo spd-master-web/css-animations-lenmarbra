@@ -53,13 +53,33 @@
 
 <!-- At scroll down  -->
     <h2>The End</h2>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+  
     <script type="text/javascript">
     $(document).on('scroll', function(){
       $('h2').css("left", Math.max(1300-0.75*window.scrollY, 100) + "px");
     }) 
+    
+    
+    // @keyframes right {
+    // from {transform: translateX(-900px)}
+    // to{transform: translateX(0px)}
+    // } 
+
+    // @keyframes down {
+    //   from {transform: translateY(-200em)}
+    //   to{transform: translateY(-5em)}
+    // }
+
+    // @keyframes up {
+    //   from {transform: translateY(1000em)}
+    //   to{transform: translateY(0em)}
+    // }
+
     </script>
   
   </section>

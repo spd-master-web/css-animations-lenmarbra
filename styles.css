@@ -45,7 +45,7 @@ body{
 }
 
 .bg-img{
-  background-image: url(/assets/03.png);
+  background-image: url(assets/03.png);
   background-position: center;
   background-size: cover;
   height: 590px;
